@@ -106,9 +106,15 @@ function redShadow() {
   }, 1500);
 }
 // **********************************************
-startStopBtn.onclick = () => startStop();
-lapBtn.onclick = () => lap();
-resetBtn.onclick = () => reset();
+startStopBtn.onclick = () => {
+  startStop();
+};
+lapBtn.onclick = () => {
+  lap();
+};
+resetBtn.onclick = () => {
+  reset();
+};
 // **********************************************
 document.addEventListener("keydown", (e) => {
   if (e.code == "KeyS" || e.code == "Enter" || e.code == "Space") {
