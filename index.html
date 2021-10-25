@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="shortcut icon" href="img/time.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <span class="stopwatch">
+            <div class="hours-wrapper">
+              <span data-goal="hours">00</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="minutes-wrapper">
+              <span data-goal="minutes">00</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="seconds-wrapper">
+              <span data-goal="seconds">00</span>
+            </div>
+            <span class="point">.</span>
+            <div class="milliseconds-wrapper">
+              <span data-goal="milliseconds">0</span>
+            </div>
+          </span>
+          <div class="btns">
+            <button data-goal="startStop" data-active="active">Start</button>
+            <button data-goal="lap" disabled>Lap</button>
+            <button data-goal="reset">Reset</button>
+          </div>
+          <ul class="story"></ul>
+        </div>
+        <div class="shadow"></div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
