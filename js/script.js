@@ -119,9 +119,9 @@ resetBtn.onclick = () => {
 document.addEventListener("keydown", (e) => {
   if (e.code == "KeyS" || e.code == "Enter" || e.code == "Space") {
     startStop();
-  } else if (e.code == "KeyR") {
+  } else if (e.code == "KeyR" && !resetBtn.getAttribute('disabled')) {
     reset();
-  } else if (e.code == "KeyL") {
+  } else if (e.code == "KeyL" && !lapBtn.getAttribute('disabled')) {
     lap();
   } else redShadow();
 });
