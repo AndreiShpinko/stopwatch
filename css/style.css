@@ -1,4 +1,3 @@
-/*RESET START*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -56,10 +55,10 @@ textarea {
   outline: none;
 }
 
-/*RESET FINISH*/
 body {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  -webkit-appearance: none;
 }
 
 .container {

@@ -61,6 +61,7 @@ function startStop() {
   if (startStopBtn.dataset.active) {
     startFun();
     lapBtn.removeAttribute("disabled");
+    resetBtn.removeAttribute("disabled");
     startStopBtn.setAttribute("data-active", "");
     startStopBtn.innerHTML = "Stop";
   } else {
@@ -85,6 +86,8 @@ function reset() {
   stopFun();
   startStopBtn.setAttribute("data-active", "start");
   startStopBtn.innerHTML = "Start";
+  resetBtn.setAttribute("disabled", "disabled");
+  lapBtn.setAttribute("disabled", "disabled");
   story.innerHTML = "";
   [hours, minutes, seconds, mSeconds] = [0, 0, 0, 0];
   [
@@ -103,9 +106,9 @@ function redShadow() {
   }, 1500);
 }
 // **********************************************
-startStopBtn.onclick = () => startStop;
-lapBtn.onclick = () => lap;
-resetBtn.onclick = () => reset;
+startStopBtn.onclick = () => startStop();
+lapBtn.onclick = () => lap();
+resetBtn.onclick = () => reset();
 // **********************************************
 document.addEventListener("keydown", (e) => {
   if (e.code == "KeyS" || e.code == "Enter" || e.code == "Space") {
