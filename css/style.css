@@ -129,8 +129,8 @@ main {
   height: 100px;
   left: 0;
   bottom: -2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff));
-  background: linear-gradient(transparent, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fffffe));
+  background: linear-gradient(rgba(255, 255, 255, 0), #fffffe 100%);
 }
 
 .story li {
@@ -223,4 +223,3 @@ main {
     margin: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
