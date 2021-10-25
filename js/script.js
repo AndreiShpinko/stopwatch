@@ -101,7 +101,7 @@ function reset() {
 function redShadow() {
   let shadowEl = document.querySelector(".shadow");
   shadowEl.style.boxShadow = "0 0 40px 4px #f00";
-  setInterval(() => {
+  setTimeout(() => {
     shadowEl.style.boxShadow = "";
   }, 1500);
 }
